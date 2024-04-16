@@ -227,6 +227,7 @@ export const ROUTE_PROCESSOR_3_2_SUPPORTED_CHAIN_IDS = [
   ChainId.SCROLL,
   ChainId.FILECOIN,
   ChainId.ZETACHAIN,
+  ChainId.FLARE,
 ] as const
 export type RouteProcessor3_2ChainId =
   (typeof ROUTE_PROCESSOR_3_2_SUPPORTED_CHAIN_IDS)[number]
@@ -253,6 +254,7 @@ export const ROUTE_PROCESSOR_3_2_ADDRESS: Record<
   [ChainId.SCROLL]: '0xCA6Fe749878841b96F620Ec79638B13dAaD3D320',
   [ChainId.FILECOIN]: '0xCdBCd51a5E8728E0AF4895ce5771b7d17fF71959',
   [ChainId.ZETACHAIN]: '0xb46e319390De313B8cc95EA5aa30C7bBFD79Da94',
+  [ChainId.FLARE]: '0x5CeEe9F4F49C106D5Bc049C8D649C332E6d365ad',
 } as const
 export const isRouteProcessor3_2ChainId = (
   chainId: ChainId,

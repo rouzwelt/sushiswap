@@ -684,6 +684,13 @@ export const WNATIVE = {
     name: 'Wrapped CRO',
   }),
   [ChainId.BLAST]: WETH9[ChainId.BLAST],
+  [ChainId.FLARE]: new Token({
+    chainId: ChainId.FLARE,
+    address: WNATIVE_ADDRESS[ChainId.FLARE],
+    decimals: 18,
+    symbol: 'WFLR',
+    name: 'Wrapped FLR',
+  }),
 } as const
 
 export const SUSHI = addressMapToTokenMap(
@@ -802,7 +809,7 @@ export const USDT: Record<keyof typeof USDT_ADDRESS, Token> = {
     USDT_ADDRESS,
   ) as Omit<
     Record<keyof typeof USDT_ADDRESS, Token>,
-    typeof ChainId.BSC & typeof ChainId.BSC_TESTNET
+    typeof ChainId.BSC & typeof ChainId.BSC_TESTNET & typeof ChainId.FLARE
   >),
   [ChainId.BSC]: new Token({
     chainId: ChainId.BSC,
@@ -823,6 +830,13 @@ export const USDT: Record<keyof typeof USDT_ADDRESS, Token> = {
     address: USDT_ADDRESS[ChainId.BOBA_BNB],
     decimals: 18,
     symbol: 'USDT',
+    name: 'Tether USD',
+  }),
+  [ChainId.FLARE]: new Token({
+    chainId: ChainId.FLARE,
+    address: USDT_ADDRESS[ChainId.FLARE],
+    decimals: 6,
+    symbol: 'eUSDT',
     name: 'Tether USD',
   }),
 }
