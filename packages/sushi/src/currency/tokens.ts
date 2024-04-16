@@ -684,6 +684,13 @@ export const WNATIVE = {
     name: 'Wrapped CRO',
   }),
   [ChainId.BLAST]: WETH9[ChainId.BLAST],
+  [ChainId.FLARE]: new Token({
+    chainId: ChainId.FLARE,
+    address: WNATIVE_ADDRESS[ChainId.FLARE],
+    decimals: 18,
+    symbol: 'WFLR',
+    name: 'Wrapped FLR',
+  }),
 } as const
 
 export const SUSHI = addressMapToTokenMap(
