@@ -568,7 +568,7 @@ export const publicChains = [
   harmonyOne,
   kava,
   metis,
-  optimism,
+  optimism as Chain,
   moonbeam,
   moonriver,
   polygon,
@@ -580,9 +580,9 @@ export const publicChains = [
   palm,
   okc,
   heco,
-  zkSync,
+  zkSync as Chain,
   linea,
-  base,
+  base as Chain,
   scroll,
   filecoin,
   zetachain,
@@ -671,7 +671,7 @@ export const publicClientConfig = {
     transport: publicTransports[ChainId.MOONRIVER],
   },
   [ChainId.OPTIMISM]: {
-    chain: optimism,
+    chain: optimism as Chain,
     transport: publicTransports[ChainId.OPTIMISM],
   },
   [ChainId.POLYGON]: {
@@ -711,7 +711,7 @@ export const publicClientConfig = {
     transport: publicTransports[ChainId.HECO],
   },
   [ChainId.ZKSYNC_ERA]: {
-    chain: zkSync,
+    chain: zkSync as Chain,
     transport: publicTransports[ChainId.ZKSYNC_ERA],
   },
   [ChainId.LINEA]: {
@@ -719,7 +719,7 @@ export const publicClientConfig = {
     transport: publicTransports[ChainId.LINEA],
   },
   [ChainId.BASE]: {
-    chain: base,
+    chain: base as Chain,
     transport: publicTransports[ChainId.BASE],
   },
   [ChainId.SCROLL]: {
