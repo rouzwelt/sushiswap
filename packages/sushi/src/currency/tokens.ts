@@ -1168,7 +1168,7 @@ export const MUSD = new Token({
 })
 
 export const ENOSYS_BNZ = new Token({
-  chainId: 14,
+  chainId: ChainId.FLARE,
   address: "0xfD3449E8Ee31117a848D41Ee20F497a9bCb53164",
   decimals: 18,
   symbol: "BNZ",
@@ -1176,7 +1176,7 @@ export const ENOSYS_BNZ = new Token({
 });
 
 export const ENOSYS_EQNT = new Token({
-  chainId: 14,
+  chainId: ChainId.FLARE,
   address: "0x60fDC7B744E886e96Aa0DEf5f69eE440dB9d8c77",
   decimals: 18,
   symbol: "eQNT",
@@ -1184,7 +1184,7 @@ export const ENOSYS_EQNT = new Token({
 });
 
 export const ENOSYS_HLN = new Token({
-  chainId: 14,
+  chainId: ChainId.FLARE,
   address: "0x140D8d3649Ec605CF69018C627fB44cCC76eC89f",
   decimals: 18,
   symbol: "HLN",
@@ -1192,9 +1192,17 @@ export const ENOSYS_HLN = new Token({
 });
 
 export const ENOSYS_APS = new Token({
-  chainId: 14,
+  chainId: ChainId.FLARE,
   address: "0xff56eb5b1a7faa972291117e5e9565da29bc808d",
   decimals: 18,
   symbol: "APS",
   name: "Apsis",
+});
+
+export const ENOSYS_EETH = new Token({
+  chainId: 14,
+  address: "0xa76dcddce60a442d69bac7158f3660f50921b122",
+  decimals: 18,
+  symbol: "eETH",
+  name: "Enosys ETH",
 });
